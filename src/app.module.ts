@@ -1,3 +1,4 @@
+import { DatasetModule } from './modules/dataset/dataset.module';
 import './boilerplate.polyfill';
 
 import type { MiddlewareConsumer, NestModule } from '@nestjs/common';
@@ -17,6 +18,8 @@ import { SharedModule } from './shared/shared.module';
 
 @Module({
     imports: [
+        DatasetModule,
+        DatasetModule,
         AuthModule,
         UserModule,
         MathModule,

@@ -36,9 +36,9 @@ export class UserRegisterDto {
     @MinLength(6)
     readonly password: string;
 
-    @ApiProperty()
-    @Column()
-    @IsPhoneNumber()
-    @IsOptional()
-    phone: string;
+    // @ApiProperty()
+    // @Column()
+    // @IsPhoneNumber()
+    // @IsOptional()
+    // phone: string;
 }
