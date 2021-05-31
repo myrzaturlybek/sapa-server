@@ -10,4 +10,10 @@ export class DatasetController {
     getDataset() {
         return this.datasetService.getDataset();
     }
+
+    @Get('prediction')
+    @HttpCode(HttpStatus.OK)
+    getPrediction() {
+        return this.datasetService.getPrediction();
+    }
 }
